@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>Project Registration Form</h1>
+        <form action="#" method="POST">
+            <!-- Client Information -->
+            <fieldset>
+                <legend>Client Information</legend>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                
+                <label for="contactInfo">Contact Information:</label>
+                <input type="text" id="contactInfo" name="contactInfo" required>
+                
+                <label for="idProof">Identification Proof:</label>
+                <input type="text" id="idProof" name="idProof" required>
+            </fieldset>
+            
+            <!-- Project Information -->
+            <fieldset>
+                <legend>Project Information</legend>
+                <label for="projectType">Project Type:</label>
+                <input type="text" id="projectType" name="projectType" required>
+                
+                <label for="projectLocation">Project Location:</label>
+                <input type="text" id="projectLocation" name="projectLocation" required>
+                
+                <label for="landOwnershipDocs">Land Ownership Documents:</label>
+                <input type="text" id="landOwnershipDocs" name="landOwnershipDocs" required>
+                
+                <label for="projectScope">Project Scope:</label>
+                <textarea id="projectScope" name="projectScope" required></textarea>
+                
+                <label for="estimatedBudget">Estimated Budget:</label>
+                <input type="number" id="estimatedBudget" name="estimatedBudget" required>
+            </fieldset>
+            
+            <!-- Architectural Details -->
+            <fieldset>
+                <legend>Architectural Details</legend>
+                <label for="architecturalPlans">Architectural Plans:</label>
+                <input type="file" id="architecturalPlans" name="architecturalPlans" required>
+                
+                <label for="sitePlan">Site Plan:</label>
+                <input type="file" id="sitePlan" name="sitePlan" required>
+                
+                <label for="structuralDesign">Structural Design:</label>
+                <input type="file" id="structuralDesign" name="structuralDesign" required>
+                
+                <label for="materialSpecs">Material Specifications:</label>
+                <textarea id="materialSpecs" name="materialSpecs" required></textarea>
+            </fieldset>
+            
+            <!-- Legal and Regulatory Compliance -->
+            <fieldset>
+                <legend>Legal and Regulatory Compliance</legend>
+                <label for="permits">Zoning and Land Use Permits:</label>
+                <input type="file" id="permits" name="permits" required>
+                
+                <label for="buildingPermits">Building Permits:</label>
+                <input type="file" id="buildingPermits" name="buildingPermits" required>
+                
+                <label for="environmentalClearances">Environmental Clearances:</label>
+                <input type="file" id="environmentalClearances" name="environmentalClearances" required>
+                
+                <label for="fireSafetyApprovals">Fire Safety Approvals:</label>
+                <input type="file" id="fireSafetyApprovals" name="fireSafetyApprovals" required>
+                
+                <label for="utilityApprovals">Utility Approvals:</label>
+                <input type="file" id="utilityApprovals" name="utilityApprovals" required>
+            </fieldset>
+            
+            <!-- Timeline and Milestones -->
+            <fieldset>
+                <legend>Timeline and Milestones</legend>
+                <label for="startDate">Project Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required>
+                
+                <label for="completionDate">Estimated Completion Date:</label>
+                <input type="date" id="completionDate" name="completionDate" required>
+                
+                <label for="milestones">Key Milestones and Deadlines:</label>
+                <textarea id="milestones" name="milestones" required></textarea>
+            </fieldset>
+            
+            <!-- Financial Details -->
+            <fieldset>
+                <legend>Financial Details</legend>
+                <label for="paymentSchedule">Payment Schedule:</label>
+                <textarea id="paymentSchedule" name="paymentSchedule" required></textarea>
+                
+                <label for="costEstimates">Cost Estimates:</label>
+                <textarea id="costEstimates" name="costEstimates" required></textarea>
+                
+                <label for="fundingSources">Funding Sources:</label>
+                <textarea id="fundingSources" name="fundingSources" required></textarea>
+            </fieldset>
+            
+            <!-- Contractor and Vendor Information -->
+            <fieldset>
+                <legend>Contractor and Vendor Information</legend>
+                <label for="contractorDetails">Contractor Details:</label>
+                <textarea id="contractorDetails" name="contractorDetails" required></textarea>
+                
+                <label for="subcontractors">Subcontractors and Vendors:</label>
+                <textarea id="subcontractors" name="subcontractors" required></textarea>
+                
+                <label for="agreements">Agreements and Contracts:</label>
+                <input type="file" id="agreements" name="agreements" required>
+            </fieldset>
+            
+            <!-- Insurance and Liability -->
+            <fieldset>
+                <legend>Insurance and Liability</legend>
+                <label for="insuranceCoverage">Insurance Coverage:</label>
+                <textarea id="insuranceCoverage" name="insuranceCoverage" required></textarea>
+                
+                <label for="liabilityClauses">Liability Clauses:</label>
+                <textarea id="liabilityClauses" name="liabilityClauses" required></textarea>
+            </fieldset>
+            
+            <!-- Special Requirements -->
+            <fieldset>
+                <legend>Special Requirements</legend>
+                <label for="sustainabilityGoals">Sustainability Goals:</label>
+                <textarea id="sustainabilityGoals" name="sustainabilityGoals"></textarea>
+                
+                <label for="accessibilityNeeds">Accessibility Needs:</label>
+                <textarea id="accessibilityNeeds" name="accessibilityNeeds"></textarea>
+                
+                <label for="aestheticPreferences">Aesthetic Preferences:</label>
+                <textarea id="aestheticPreferences" name="aestheticPreferences"></textarea>
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
