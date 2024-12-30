@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './work_content.module.css'
 import { getImageUrl } from '../../../utils'
 import { Link } from 'react-router-dom';
-// import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const Work_content = ({ isSun, toggleTheme }) => {
     const div_color = isSun ? styles.divider_isSun : styles.divider
